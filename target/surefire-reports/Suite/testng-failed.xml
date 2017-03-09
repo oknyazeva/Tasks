@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="fileName" value="test.exe"/>
+  <test name="Test With Classes(failed)">
+    <parameter name="content" value="12345678"/>
+    <classes>
+      <class name="FileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="getAxtensionTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- FileTest -->
+    </classes>
+  </test> <!-- Test With Classes(failed) -->
+</suite> <!-- Failed suite [Suite] -->
